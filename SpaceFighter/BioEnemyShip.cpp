@@ -13,6 +13,7 @@ BioEnemyShip::BioEnemyShip()
 
 void BioEnemyShip::Update(const GameTime& gameTime)
 {
+	//#3 Play around with the calculations for the bio enemy ship's movement.
 	if (IsActive())
 	{
 		float x = sin(gameTime.GetTotalTime() * Math::PI + GetIndex());
